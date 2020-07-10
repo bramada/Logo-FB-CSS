@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Logo FB CSS</title>
+</head>
+<body>
+    <style>
+        body {
+            margin: 35px auto;
+            text-align: center;
+            display: block;
+        }
+
+        #facebook-icon {
+            background: #3b5998;
+            text-indent: -999em;
+            width: 100px;
+            height: 110px;
+            border-radius: 5px;
+            position: relative;
+            overflow: hidden;
+            border: 15px solid #3b5998;
+            border-bottom: 0;
+            display: inline-block;
+        }
+
+        #facebook-icon::before {
+            background: #3b5998;
+            content: "/20";
+            position: absolute;
+            bottom: -30px;
+            right: -37px;
+            width: 40px;
+            height: 90px;
+            border: 20px solid #eee;
+            border-radius: 25px;
+        }
+
+        #facebook-icon::after {
+            background: #eee;
+            content: "/20";
+            position: absolute;
+            top: 50px;
+            right: 5px;
+            width: 55px;
+            height: 20px;
+        }
+
+    </style>
+
+    <div id='facebook-icon'></div>
+
+</body>
+</html>
